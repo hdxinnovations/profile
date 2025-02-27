@@ -1,0 +1,441 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 15px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; /* Ensures the company name is above the nav */
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Company Name */
+.company-container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.company-name {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo inside Hero Section */
+.hero .logo-img {
+    height: 500px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+    max-width: 80%;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #ffd700;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 15px #ffd700;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Services */
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: rgba(255, 215, 0, 0.2);
+    padding: 20px;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    background: #ffd700;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Team */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #00ffcc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* About Us Section */
+#about {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Intro Paragraph */
+.about-intro {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* About Cards Container */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Individual About Cards */
+.about-card {
+    background: rgba(255, 215, 0, 0.1);
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.about-card h3 {
+    font-size: 22px;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.about-card ul {
+    text-align: left;
+    padding-left: 20px;
+    color: #ddd;
+}
+
+/* Hover Effect */
+.about-card:hover {
+    background: #ffd700;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card {
+        width: 90%;
+    }
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Contact Links */
+#contact a {
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Link */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+/* Download Section */
+#download {
+    text-align: center;
+    padding: 50px 10%;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #ffd700;
+    color: #000;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    box-shadow: 0px 0px 15px #ffd700;
+    transform: scale(1.1);
+}
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 15px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Company Name */
+.company-container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.company-name {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+/* Navigation Links */
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 4px;
+    background: #ffd700;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 60px;
+        right: 5%;
+        background: rgba(0, 0, 0, 0.95);
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
